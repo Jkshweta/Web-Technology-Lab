@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calc {
+    width: 100%;
+    max-width: 350px;
+    background: #2c2f33;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#output {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+#output input {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #1c1f22;
+    color: white;
+}
+
+.btn input {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* Default button styles */
+.btn input {
+    background: #3c4043;
+    color: white;
+}
+
+/* Operator buttons */
+.operator {
+    background: #008cba;
+    color: white;
+}
+
+.operator:hover {
+    background: #0077a5;
+}
+
+/* Clear and Backspace buttons */
+#clear, #backspace {
+    background: rgb(237, 50, 50);
+    color: white;
+}
+
+#clear:hover, #backspace:hover {
+    background: rgb(200, 40, 40);
+}
+
+/* Equal button */
+#equal {
+    background: rgb(255, 140, 0);
+    color: white;
+}
+
+#equal:hover {
+    background: rgb(220, 110, 0);
+}
+
+/* Button hover effect */
+.btn input:hover {
+    background: #555;
+}
